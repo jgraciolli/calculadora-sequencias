@@ -144,8 +144,8 @@ cd calculadora-sequencias
     <tr>
       <td>Weslley José Pereira de Moraes</td>
       <td>Product Owner</td>
-      <td><a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="https://www.linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><a href="https://github.com/wjmoraes12"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/weslley-moraes-b005472a2/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
       <td>João Victor Graciolli Ramos</td>
@@ -154,34 +154,34 @@ cd calculadora-sequencias
       <td><a href="https://www.linkedin.com/in/jvgraciolli/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
-      <td>Ana</td>
+      <td>Ana Laura Arantes Machado</td>
       <td>Developer</td>
-      <td><a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="https://www.linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><a href="https://github.com/arantesmachadoanalaura-ops"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/ana-laura-arantes-machado-24a8323bb/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
-      <td>Eduardo Nakano</td>
+      <td>Eduardo Nakano Silva Senador</td>
       <td>Developer</td>
-      <td><a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="https://www.linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><a href="https://github.com/enksise"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/eduardo-nakano-373702287/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
       <td>Leonardo Kenzo Okuno</td>
       <td>Developer</td>
-      <td><a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="http://linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><a href="https://github.com/KenzoOkuno"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/leonardo-kenzo-okuno-2897b1289/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
       <td>Miguel Vitale</td>
       <td>Developer</td>
-      <td><a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="https://www.linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><a href="https://github.com/MiguelVitale"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/miguel-vitale-2b42003a5/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
-      <td>Olavo Salles</td>
+      <td>Olavo Salles Gino Teixeira</td>
       <td>Developer</td>
-      <td><a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="https://www.linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><a href="https://github.com/olavosalles"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
   </table>
 </div>
