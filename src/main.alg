@@ -32,6 +32,9 @@ numero, primo, ediv, divisor: inteiro
 // Variáveis sequência fibonacci
 C, T1, T2, PTF, termos: inteiro
 
+// Variáveis sequência fatorial
+a,b,d,x,y : inteiro
+
 Inicio
 
  escolher <-10
@@ -125,11 +128,18 @@ Inicio
          limpatela
          escreval("*Sequência Fatorial*")
          escreval("-----------------------")
-         escreval("insira um numero")
-         leia(N)
-         escreval("numero escolhido:", N)
-         escreval("")
-         escreval("insira qualquer número para voltar ao menu")
+         escreval("Insira a posição do fatorial: ")
+         leia(a)
+
+         para x de 1 ate a faca
+              d <- 1
+              para y de 1 ate x faca
+                   d <- d * y
+              fimpara
+              escreval("O fatorial de ", x, " é ", d)
+         fimpara
+         escreval()
+         escreval("Insira qualquer número para voltar ao menu:")
 
          leia(qualquer)
       fimse
