@@ -23,10 +23,14 @@ Algoritmo "Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas"
 
 Var
 
+// Variáveis controle de menu
 escolher, N, qualquer: inteiro
 
 // Variáveis do num informado, do num primo, num divisivel e do divisor
 numero, primo, ediv, divisor: inteiro
+
+// Variáveis sequência fibonacci
+C, T1, T2, PTF, termos: inteiro
 
 Inicio
 
@@ -54,11 +58,21 @@ Inicio
          limpatela
          escreval("*Sequência de Fibonacci*")
          escreval("-----------------------")
-         escreval("insira um numero")
-         leia(N)
-         escreval("numero escolhido:", N)
-         escreval("")
-         escreval("insira qualquer número para voltar ao menu")
+         T1 <- 0
+         T2 <- 1
+         Escreva ("Quantos termos da sequência de Fibonacci deseja saber?: ")
+         leia (termos)
+         escreva (T1)
+         escreva (T2)
+         Para C <- 3 ate (termos) faca
+            PTF <- T1 + T2
+            escreva (PTF)
+            T1 <- T2
+            T2 <- PTF
+         fimpara
+
+         escreval()
+         escreval("Insira qualquer número para voltar ao menu:")
 
          //o programa pede para ler para o usuario poder ver a sequencia
          //antes de voltar ao menu
