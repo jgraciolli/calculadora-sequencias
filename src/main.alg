@@ -19,13 +19,162 @@ Algoritmo "Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas"
 //   Miguel Vitale - Developer
 //   Olavo Salles - Developer
 //
-// Data atual  : 30/03/2026
-Var
-// Seção de Declarações das variáveis 
+// Data atual  : 06/04/2026
 
+Var
+
+escolher, N, qualquer: inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+ escolher <-10
+   enquanto escolher <> 0 faca
+      escolher <- 10
+      limpatela
+
+      escreval("*Menu da calculadora*")
+      escreval("Selecione uma opção:")
+      escreval("-----------------------")
+      escreval("1 - Sequência de Fibonacci")
+      escreval("2 - Números Triangulares")
+      escreval("3 - Sequência de Números Primos")
+      escreval("4 - Sequência Fatorial")
+      escreval("5 - Sequência de Quadrados Perfeitos")
+      escreval("6 - Sequência de Cubos")
+      escreval("7 - Sequência Geométrica")
+      escreval("8 - Sequência Alternada")
+      escreval("9 - Sequência Tribonacci")
+      escreval("0 - Sair")
+      leia(escolher)
+
+      se escolher = 1 entao
+         limpatela
+         escreval("*Sequência de Fibonacci*")
+         escreval("-----------------------")
+         escreval("insira um numero")
+         leia(N)
+         escreval("numero escolhido:", N)
+         escreval("")
+         escreval("insira qualquer número para voltar ao menu")
+
+         //o programa pede para ler para o usuario poder ver a sequencia
+         //antes de voltar ao menu
+         leia(qualquer)
+      fimse
+
+      se escolher = 2 entao
+         limpatela
+         escreval("*Números Triangulares*")
+         escreval("-----------------------")
+         escreval("insira um numero")
+         leia(N)
+         escreval("numero escolhido:", N)
+         escreval("")
+         escreval("insira qualquer número para voltar ao menu")
+
+         leia(qualquer)
+      fimse
+
+      se escolher = 3 entao
+         limpatela
+         escreval("*Sequência de Números Primos*")
+         escreval("-----------------------")
+         escreval("insira um numero")
+         leia(N)
+         escreval("numero escolhido:", N)
+         escreval("")
+         escreval("insira qualquer número para voltar ao menu")
+
+         leia(qualquer)
+      fimse
+      
+        se escolher = 4 entao
+         limpatela
+         escreval("*Sequência Fatorial*")
+         escreval("-----------------------")
+         escreval("insira um numero")
+         leia(N)
+         escreval("numero escolhido:", N)
+         escreval("")
+         escreval("insira qualquer número para voltar ao menu")
+
+         leia(qualquer)
+      fimse
+      
+        se escolher = 5 entao
+         limpatela
+         escreval("*Sequência de Quadrados Perfeitos*")
+         escreval("-----------------------")
+         escreval("insira um numero")
+         leia(N)
+         escreval("numero escolhido:", N)
+         escreval("")
+         escreval("insira qualquer número para voltar ao menu")
+
+         leia(qualquer)
+      fimse
+      
+        se escolher = 6 entao
+         limpatela
+         escreval("*Sequência de Cubos*")
+         escreval("-----------------------")
+         escreval("insira um numero")
+         leia(N)
+         escreval("numero escolhido:", N)
+         escreval("")
+         escreval("insira qualquer número para voltar ao menu")
+
+         leia(qualquer)
+      fimse
+      
+        se escolher = 7 entao
+         limpatela
+         escreval("*Sequência Geométrica*")
+         escreval("-----------------------")
+         escreval("insira um numero")
+         leia(N)
+         escreval("numero escolhido:", N)
+         escreval("")
+         escreval("insira qualquer número para voltar ao menu")
+
+         leia(qualquer)
+      fimse
+      
+        se escolher = 8 entao
+         limpatela
+         escreval("*Sequência Alternada*")
+         escreval("-----------------------")
+         escreval("insira um numero")
+         leia(N)
+         escreval("numero escolhido:", N)
+         escreval("")
+         escreval("insira qualquer número para voltar ao menu")
+
+         leia(qualquer)
+      fimse
+      
+        se escolher = 9 entao
+         limpatela
+         escreval("*Sequência Tribonacci*")
+         escreval("-----------------------")
+         escreval("insira um numero")
+         leia(N)
+         escreval("numero escolhido:", N)
+         escreval("")
+         escreval("insira qualquer número para voltar ao menu")
+
+         leia(qualquer)
+      fimse
+
+      se (escolher > 9) ou (escolher < 0) entao
+         limpatela
+         escreval("opção não válida")
+         escreval("insira qualquer número para voltar ao menu")
+
+         leia(qualquer)
+      fimse
+
+   fimenquanto
 
 
 Fimalgoritmo
