@@ -5,12 +5,12 @@
 
 | Rank | Prioridade | User Story | Sprint | Requisito do Cliente | Status |
 | :--: | :--------: | ---------- | :----: | :------------------: | :----: |
-| 1 | Alta | Como usuário do sistema quero visualizar um menu com as opções disponíveis antes de realizar qualquer operação, para poder escolher qual ação desejo executar no sistema | 1 | RF-01 | 🔲 |
-| 2 | Alta | Como usuário quero executar apenas um cálculo por vez, para facilitar o uso do sistema e evitar confusão durante a utilização | 1 | RF-02 | 🔲 |
-| 3 | Alta | Como usuário quero visualizar diferentes sequências matemáticas, para poder analisar padrões numéricos | 1 | RF-04 | 🔲 |
-| 4 | Alta | Como usuário quero informar um índice N para gerar a sequência de números primos até a quantidade indicada | 1 | RF-06 | 🔲 |
-| 5 | Alta | Como usuário quero informar um índice N para calcular a sequência de Fibonacci até a posição indicada | 1 | RF-05 | 🔲 |
-| 6 | Alta | Como usuário quero informar um índice N para calcular a sequência fatorial até a posição indicada | 1 | RF-09 | 🔲 |
+| 1 | Alta | Como usuário do sistema quero visualizar um menu com as opções disponíveis antes de realizar qualquer operação, para poder escolher qual ação desejo executar no sistema | 1 | RF-01 | ✅ |
+| 2 | Alta | Como usuário quero executar apenas um cálculo por vez, para facilitar o uso do sistema e evitar confusão durante a utilização | 1 | RF-02 | ✅ |
+| 3 | Alta | Como usuário quero visualizar diferentes sequências matemáticas, para poder analisar padrões numéricos | 1 | RF-04 | ✅ |
+| 4 | Alta | Como usuário quero informar um índice N para gerar a sequência de números primos até a quantidade indicada | 1 | RF-06 | ✅ |
+| 5 | Alta | Como usuário quero informar um índice N para calcular a sequência de Fibonacci até a posição indicada | 1 | RF-05 | ✅ |
+| 6 | Alta | Como usuário quero informar um índice N para calcular a sequência fatorial até a posição indicada | 1 | RF-09 | ✅ |
 
 ---
 
