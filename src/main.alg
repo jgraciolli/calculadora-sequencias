@@ -25,6 +25,9 @@ Var
 
 escolher, N, qualquer: inteiro
 
+// Variáveis do num informado, do num primo, num divisivel e do divisor
+numero, primo, ediv, divisor: inteiro
+
 Inicio
 
  escolher <-10
@@ -79,11 +82,27 @@ Inicio
          limpatela
          escreval("*Sequência de Números Primos*")
          escreval("-----------------------")
-         escreval("insira um numero")
-         leia(N)
-         escreval("numero escolhido:", N)
-         escreval("")
-         escreval("insira qualquer número para voltar ao menu")
+         escreva("Digite o número que gostaria de saber a sequência de primos: ")
+         leia(numero)
+
+         // verifica quantos num primos possui até o num informado e exibe cada um
+         para primo de 2 ate numero faca
+           ediv <- 0
+
+         // verifica quantos divisores esse número possui
+           para divisor de 1 ate primo faca
+             se (primo % divisor = 0) entao
+               ediv <- ediv+1
+             fimse
+           fimpara
+
+         // Verifica se é um num primo e exibe caso seja
+           se (ediv = 2) entao
+             escreva(primo)
+           fimse
+         fimpara
+         escreval()
+         escreval("Insira qualquer número para voltar ao menu")
 
          leia(qualquer)
       fimse
