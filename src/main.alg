@@ -35,9 +35,11 @@ Var
    // Variáveis sequência fatorial
    a,b,d,x,y : inteiro
 
-   //variaveis sequência triangular
+   //variáveis sequência triangular
    Natual, SomaAtual, SomaAnterior: inteiro
-
+   
+   //variáveis sequência de cubos
+   cubo, posicaoC: real
 Inicio
 
    escolher <-10
@@ -175,9 +177,14 @@ Inicio
          limpatela
          escreval("*Sequência de Cubos*")
          escreval("-----------------------")
-         escreval("insira um numero")
+         escreval("insira até que posição mostrar a sequência")
          leia(N)
-         escreval("numero escolhido:", N)
+         enquanto posicaoC <= N faca
+            cubo <- posicaoC * posicaoC * posicaoC
+            escreval(posicaoC, "-", cubo)
+            posicaoC <- posicaoC + 1
+         fimenquanto
+
          escreval("")
          escreval("insira qualquer número para voltar ao menu")
 
