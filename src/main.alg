@@ -36,7 +36,7 @@ Var
    a,b,d,x,y : inteiro
 
    //variáveis sequência triangular
-   Natual, SomaAtual, SomaAnterior: inteiro
+   Natual, SomaAtual, SomaAnterior: real
    
    //variáveis sequência de cubos
    cubo, posicaoC: real
@@ -93,15 +93,18 @@ Inicio
          escreval("-----------------------")
          escreval("insira até qual posição da sequência deseja ver")
          leia(N)
+         //posicao da sequencia
+         Natual <- 1
          //o numero que vai ser somado
          SomaAtual <- 1
          //a soma de todos os numeros anteriores
          SomaAnterior <- 0
-         para Natual de 1 ate N faca
+         enquanto Natual <= N faca
             SomaAtual <- Natual + SomaAnterior
             escreval(Natual, "-", SomaAtual)
             SomaAnterior <- SomaAtual
-         fimpara
+            Natual <- Natual + 1
+         fimenquanto
 
 
          //voltar ao menu
