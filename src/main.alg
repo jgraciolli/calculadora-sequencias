@@ -1,6 +1,4 @@
 Algoritmo "Desenvolvimento de AplicaÃ§Ã£o de CÃ¡lculo de SequÃªncias LÃ³gicas"
-// Disciplina   : [Linguagem e Lógica de Programação] 
-// Professor   : Antonio Carlos Nicolodi 
 // API - 1Â° Semestre
 //
 // Professores:
@@ -186,7 +184,7 @@ Inicio
          limpatela
          escreval("*Sequência de Cubos*")
          escreval("-----------------------")
-         escreva("Digite ate qual numero deseja ver os cubos: ")
+         escreval("Digite ate qual numero deseja ver os cubos: ")
          leia(N)
          para i de 1 ate N faca
             cubo <- i * i * i
