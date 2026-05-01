@@ -1,4 +1,6 @@
 Algoritmo "Desenvolvimento de Aplicação de Cálculo de Sequências Lógicas"
+// Disciplina   : [Linguagem e L�gica de Programa��o] 
+// Professor   : Antonio Carlos Nicolodi 
 // API - 1° Semestre
 //
 // Professores:
@@ -34,6 +36,9 @@ Var
 
    // Variáveis sequência fatorial
    a,b,d,x,y : inteiro
+   
+   // Variáveis sequência de Cubos
+   cubo, i : inteiro
 
    //variáveis sequência triangular
    Natual, SomaAtual, SomaAnterior: real
@@ -179,11 +184,14 @@ Inicio
 
       se escolher = 6 entao
          limpatela
-         escreval("*Sequência de Cubos*")
+         escreval("*Sequ�ncia de Cubos*")
          escreval("-----------------------")
-         escreval("insira um numero")
+         escreva("Digite ate qual numero deseja ver os cubos: ")
          leia(N)
-         escreval("numero escolhido:", N)
+         para i de 1 ate N faca
+            cubo <- i * i * i
+            escreval(i, "^3 = ", cubo)
+         fimpara
          escreval("")
          escreval("insira qualquer número para voltar ao menu")
 
