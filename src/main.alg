@@ -13,7 +13,7 @@ Algoritmo "Desenvolvimento de Aplicacao de Calculo de Sequencias Logicas"
 // Equipe:
 //   Weslley Jose Pereira de Moraes - Product Owner
 //   Joao Victor Graciolli Ramos - Scrum Master
-//   Ana - Developer
+//   Ana Laura Arantes Machado - Developer
 //   Eduardo Nakano - Developer
 //   Leonardo Kenzo Okuno - Developer
 //   Miguel Vitale - Developer
