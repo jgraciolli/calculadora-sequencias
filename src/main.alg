@@ -43,8 +43,8 @@ Var
    Natual, SomaAtual, SomaAnterior: real
 
    // variaveis sequencia alternada
-   alternante,valorN, valorAtual : real
-   indiceSequenciaAlternada : inteiro
+   sinalAlternado, limiteSequencia, valorSequenciaAtual : real
+   indiceSequencia : inteiro
 
 Inicio
 
@@ -214,20 +214,50 @@ Inicio
          limpatela
          escreval("*Sequencia Alternada*")
          escreval("-----------------------")
-         escreval("Insira um numero ate a posicao desejada para mostrar a sequencia")
-         leia(valorN)
-         alternante <- 1
-         enquanto indiceSequenciaAlternada <= valorN faca
-            valorAtual <- indiceSequenciaAlternada * alternante
-            escreval(valorAtual)
-            alternante <- alternante * -1
-            indiceSequenciaAlternada <- indiceSequenciaAlternada +1
-         fimenquanto
-         indiceSequenciaAlternada <-0
+         escreval("Escolha o tipo de sequencia:")
+         escreval("1 - Alternando sinal (1, -2, 3, -4...)")
+         escreval("2 - Somando e subtraindo alternadamente")
+         leia(escolher)
+
+         escreval("Insira um numero maximo de posicoes para mostrar a sequencia:")
+         leia(limiteSequencia)
+
+         indiceSequencia <- 1
+         sinalAlternado <- 1
+         valorSequenciaAtual <- 0
+
+         se escolher = 1 entao
+            enquanto indiceSequencia <= limiteSequencia faca
+               valorSequenciaAtual <- indiceSequencia * sinalAlternado
+               escreval(valorSequenciaAtual)
+               sinalAlternado <- sinalAlternado * -1
+               indiceSequencia <- indiceSequencia + 1
+            fimenquanto
+         fimse
+
+         se escolher = 2 entao
+            escreval("Qual valor deseja SOMAR?")
+            leia(a)
+
+            escreval("Qual valor deseja SUBTRAIR?")
+            leia(b)
+
+            enquanto indiceSequencia <= limiteSequencia faca
+               se sinalAlternado = 1 entao
+                  valorSequenciaAtual <- valorSequenciaAtual + a
+               senao
+                  valorSequenciaAtual <- valorSequenciaAtual - b
+               fimse
+
+               escreval(valorSequenciaAtual)
+
+               sinalAlternado <- sinalAlternado * -1
+               indiceSequencia <- indiceSequencia + 1
+            fimenquanto
+         fimse
 
          escreval("")
          escreval("Insira qualquer numero para voltar ao menu")
-
          leia(qualquer)
       fimse
 
