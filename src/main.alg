@@ -33,7 +33,8 @@ Var
    C, T1, T2, PTF, termos: inteiro
 
    // Variaveis sequencia fatorial
-   a,b,d,x,y : inteiro
+   a,b,x,y : inteiro
+   d: real
 
    // Variaveis sequencia de Cubos
    cubo, i : inteiro
