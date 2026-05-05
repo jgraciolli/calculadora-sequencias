@@ -5,9 +5,9 @@
 
 | Rank | Prioridade | User Story | Sprint | Requisito do Cliente | Status |
 | :--: | :--------: | ---------- | :----: | :------------------: | :----: |
-| 7 | Média | Como usuário quero informar um índice N para calcular a sequência de números triangulares até a posição indicada | 2 | RF-08 | 🔲 |
-| 8 | Média | Como usuário quero informar um índice N para calcular a sequência de cubos até a posição indicada | 2 | RF-10 | 🔲 |
-| 9 | Média | Como usuário quero informar um índice N para gerar uma sequência alternada até a posição indicada | 2 | RF-11 | 🔲 |
+| 7 | Média | Como usuário quero informar um índice N para calcular a sequência de números triangulares até a posição indicada | 2 | RF-08 | ✅ |
+| 8 | Média | Como usuário quero informar um índice N para calcular a sequência de cubos até a posição indicada | 2 | RF-10 | ✅ |
+| 9 | Média | Como usuário quero informar um índice N para gerar uma sequência alternada até a posição indicada | 2 | RF-11 | ✅ |
 
 ---
 
