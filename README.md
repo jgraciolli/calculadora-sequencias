@@ -12,18 +12,19 @@ O desafio consiste em criar uma interface de console calculadora de diversas seq
 
 | Rank | Prioridade | User Story | Sprint | Requisito do Cliente | Status |
 | :--: | :--------: | ---------- | :----: | :------------------: | :----: |
-| 1 | Alta | Como usuário do sistema quero visualizar um menu com as opções disponíveis antes de realizar qualquer operação, para poder escolher qual ação desejo executar no sistema | 1 | RF-01 | 🔲 |
-| 2 | Alta | Como usuário quero executar apenas um cálculo por vez, para facilitar o uso do sistema e evitar confusão durante a utilização | 1 | RF-02 | 🔲 |
-| 3 | Alta | Como usuário quero visualizar diferentes sequências matemáticas, para poder analisar padrões numéricos | 1 | RF-04 | 🔲 |
-| 4 | Alta | Como usuário quero informar um índice N para gerar a sequência de números primos até a quantidade indicada | 2 | RF-06 | 🔲 |
-| 5 | Alta | Como usuário quero informar um índice N para calcular a sequência de Fibonacci até a posição indicada | 2 | RF-05 | 🔲 |
-| 6 | Alta | Como usuário quero informar um índice N para calcular a sequência fatorial até a posição indicada | 2 | RF-09 | 🔲 |
-| 7 | Média | Como usuário quero informar um índice N para calcular a sequência de números triangulares até a posição indicada | 3 | RF-08 | 🔲 |
-| 8 | Média | Como usuário quero informar um índice N para calcular a sequência de cubos até a posição indicada | 3 | RF-10 | 🔲 |
-| 9 | Média | Como usuário quero informar um índice N para gerar uma sequência alternada até a posição indicada | 3 | RF-11 | 🔲 |
-| 10 | Baixa | Como usuário quero visualizar a sequência de Tribonacci, para conhecer variações da sequência de Fibonacci | 4 | RF-13 | 🔲 |
-| 11 | Baixa | Como usuário quero visualizar uma sequência geométrica, para entender progressões multiplicativas | 4 | RF-12 | 🔲 |
-| 12 | Baixa | Como usuário quero informar um índice N para calcular a sequência de quadrados perfeitos até o valor correspondente | 4 | RF-07 | 🔲 |
+| 1 | Alta | Como usuário do sistema quero visualizar um menu com as opções disponíveis antes de realizar qualquer operação, para poder escolher qual ação desejo executar no sistema | 1 | RF-01 | ✅ |
+| 2 | Alta | Como usuário quero executar apenas um cálculo por vez, para facilitar o uso do sistema e evitar confusão durante a utilização | 1 | RF-02 | ✅ |
+| 3 | Alta | Como usuário quero visualizar diferentes sequências matemáticas, para poder analisar padrões numéricos | 1 | RF-04 | ✅ |
+| 4 | Alta | Como usuário quero informar um índice N para gerar a sequência de números primos até a quantidade indicada | 1 | RF-06 | ✅ |
+| 5 | Alta | Como usuário quero informar um índice N para calcular a sequência de Fibonacci até a posição indicada | 1 | RF-05 | ✅ |
+| 6 | Alta | Como usuário quero informar um índice N para calcular a sequência fatorial até a posição indicada | 1 | RF-09 | ✅ |
+| 7 | Média | Como usuário quero informar um índice N para calcular a sequência de números triangulares até a posição indicada | 2 | RF-08 | ✅ |
+| 8 | Média | Como usuário quero informar um índice N para calcular a sequência de cubos até a posição indicada | 2 | RF-10 | ✅ |
+| 9 | Média | Como usuário quero informar um índice N para gerar uma sequência alternada até a posição indicada | 2 | RF-11 | ✅ |
+| 10 | Baixa | Como usuário quero visualizar a sequência de Tribonacci, para conhecer variações da sequência de Fibonacci | 3 | RF-13 | 🔲 |
+| 11 | Baixa | Como usuário quero visualizar uma sequência geométrica, para entender progressões multiplicativas | 3 | RF-12 | 🔲 |
+| 12 | Baixa | Como usuário quero informar um índice N para calcular a sequência de quadrados perfeitos até o valor correspondente | 3 | RF-07 | 🔲 |
+| 13 | Baixa | Como usuário quero que o sistema possua uma interface colorida e amigável, com cores convenientes para diferentes telas | 3 | RNF-04 | 🔲 |
 
 Backlog detalhado: [Link](docs/backlog.md) 📄
 
@@ -60,6 +61,7 @@ Backlog detalhado: [Link](docs/backlog.md) 📄
       ┣ 📁 sprints        
       ┗ 📜 backlog.md
       ┗ 📜 requisitos.md
+      ┗ 📜 documentacao.pdf
     ┗ 📜 README.md
 ```
 

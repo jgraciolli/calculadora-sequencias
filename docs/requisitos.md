@@ -109,3 +109,8 @@ O sistema deve calcular a sequência de Tribonacci.
 ## RNF-03 - Organização do Código
 - O código deve ser estruturado por seções (menu, validação, sequências)
 - Deve ser legível e comentado
+
+---
+
+## RNF-04 - Interface Colorida
+- O sistema deve apresentar uma interface colorida e amigável ao usuário.

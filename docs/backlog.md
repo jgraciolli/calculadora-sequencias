@@ -104,4 +104,13 @@
 - **Descrição:** O sistema deve permitir que o usuário informe um valor N, que representa a quantidade de termos ou o índice da sequência de quadrados perfeitos a ser calculada.  
 - **Critério de Aceitação:** Ao inserir um valor N, o sistema deve calcular corretamente a sequência de quadrados perfeitos até o índice informado e exibir os resultados ao usuário.  
 - **Prioridade:** Baixa  
-- **Status:** Backlog            
+- **Status:** Backlog
+
+---
+
+## PB-13 - Como usuário quero que o sistema possua uma interface colorida e amigável, com cores convenientes para diferentes telas
+- **Épico:** Interface Colorida  
+- **Descrição:** O sistema deve fornecer uma interface de utilização que seja amigável ao usuário, utilizando diversas cores e não somente o preto e branco.  
+- **Critério de Aceitação:** Ao navegar o sistema, suas diferentes telas devem possuir cores convenientes ao contexto.  
+- **Prioridade:** Baixa  
+- **Status:** Backlog  
