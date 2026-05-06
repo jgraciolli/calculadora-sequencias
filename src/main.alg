@@ -17,7 +17,7 @@ Algoritmo "Desenvolvimento de Aplicacao de Calculo de Sequencias Logicas"
 //   Eduardo Nakano - Developer
 //   Leonardo Kenzo Okuno - Developer
 //   Miguel Vitale - Developer
-//   Olavo Salles - Developer
+//   Olavo Salles - Developer jr
 //
 // Data atual  : 11/04/2026
 
