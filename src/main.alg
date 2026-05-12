@@ -45,6 +45,9 @@ Var
    // variaveis sequencia alternada
    sinalAlternado, limiteSequencia, valorSequenciaAtual : real
    indiceSequencia : inteiro
+   
+   // Variaveis Sequencia de Quadrados Perfeitos
+   S: inteiro
 
 Inicio
 
@@ -172,9 +175,13 @@ Inicio
          limpatela
          escreval("*Sequencia de Quadrados Perfeitos*")
          escreval("-----------------------")
-         escreval("Insira um numero")
+         escreva("Digite ate qual numero gostaria de ver a sequencia: ")
          leia(N)
-         escreval("Numero escolhido:", N)
+            para c <- 1 ate n faca
+               S <- c * c
+               c <- c + 1
+               escreva (S)
+            fimpara
          escreval("")
          escreval("Insira qualquer numero para voltar ao menu")
 
