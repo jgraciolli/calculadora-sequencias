@@ -46,10 +46,15 @@ Var
    sinalAlternado, limiteSequencia, valorSequenciaAtual : real
    indiceSequencia : inteiro
 
+   // Variaveis Sequencia de Quadrados Perfeitos
+   S: inteiro
+
 Inicio
 
    escolher <-10
+
    enquanto escolher <> 0 faca
+
       escolher <- 10
       limpatela
 
@@ -66,221 +71,255 @@ Inicio
       escreval("8 - Sequencia Alternada")
       escreval("9 - Sequencia Tribonacci")
       escreval("0 - Sair")
+      
       leia(escolher)
 
-      se escolher = 1 entao
-         limpatela
-         escreval("*Sequencia de Fibonacci*")
-         escreval("-----------------------")
-         T1 <- 0
-         T2 <- 1
-         escreva ("Quantos termos da sequencia de Fibonacci deseja saber?: ")
-         leia (termos)
-         escreva (T1)
-         escreva (T2)
-         Para C <- 3 ate (termos) faca
-            PTF <- T1 + T2
-            escreva (PTF)
-            T1 <- T2
-            T2 <- PTF
-         fimpara
+      escolha escolher
 
-         escreval()
-         escreval("Insira qualquer numero para voltar ao menu:")
+         caso 1
 
-         // o programa pede para ler para o usuario poder ver a sequencia
-         // antes de voltar ao menu
-         leia(qualquer)
-      fimse
+            limpatela
+            escreval("*Sequencia de Fibonacci*")
+            escreval("-----------------------")
 
-      se escolher = 2 entao
-         limpatela
-         escreval("*Numeros Triangulares*")
-         escreval("-----------------------")
-         escreval("Insira ate qual posicao da sequencia deseja ver")
-         leia(N)
-         // posicao da sequencia
-         Natual <- 1
-         // o numero que vai ser somado
-         SomaAtual <- 1
-         // a soma de todos os numeros anteriores
-         SomaAnterior <- 0
-         enquanto Natual <= N faca
-            SomaAtual <- Natual + SomaAnterior
-            escreval(Natual, "-", SomaAtual)
-            SomaAnterior <- SomaAtual
-            Natual <- Natual + 1
-         fimenquanto
+            T1 <- 0
+            T2 <- 1
 
-         // voltar ao menu
-         escreval("")
-         escreval("Insira qualquer numero para voltar ao menu")
+            escreva ("Quantos termos da sequencia de Fibonacci deseja saber?: ")
+            leia (termos)
 
-         leia(qualquer)
-      fimse
+            escreva (T1, " ")
+            escreva (T2, " ")
 
-      se escolher = 3 entao
-         limpatela
-         escreval("*Sequencia de Numeros Primos*")
-         escreval("-----------------------")
-         escreva("Digite o numero que gostaria de saber a sequencia de primos: ")
-         leia(numero)
-
-         // verifica quantos numeros primos possui ate o numero informado e exibe cada um
-         para primo de 2 ate numero faca
-            ediv <- 0
-
-            // verifica quantos divisores esse numero possui
-            para divisor de 1 ate primo faca
-               se (primo % divisor = 0) entao
-                  ediv <- ediv+1
-               fimse
+            Para C <- 3 ate termos faca
+               PTF <- T1 + T2
+               escreva (PTF, " ")
+               T1 <- T2
+               T2 <- PTF
             fimpara
 
-            // Verifica se e um numero primo e exibe caso seja
-            se (ediv = 2) entao
-               escreva(primo)
-            fimse
-         fimpara
-         escreval()
-         escreval("Insira qualquer numero para voltar ao menu")
+            escreval()
+            escreval("Insira qualquer numero para voltar ao menu:")
+            leia(qualquer)
 
-         leia(qualquer)
-      fimse
+         caso 2
 
-      se escolher = 4 entao
-         limpatela
-         escreval("*Sequencia Fatorial*")
-         escreval("-----------------------")
-         escreval("Insira a posicao do fatorial: ")
-         leia(a)
+            limpatela
+            escreval("*Numeros Triangulares*")
+            escreval("-----------------------")
 
-         para x de 1 ate a faca
-            d <- 1
-            para y de 1 ate x faca
-               d <- d * y
-            fimpara
-            escreval("O fatorial de ", x, " e ", d)
-         fimpara
-         escreval()
-         escreval("Insira qualquer numero para voltar ao menu:")
+            escreval("Insira ate qual posicao da sequencia deseja ver")
+            leia(N)
 
-         leia(qualquer)
-      fimse
+            Natual <- 1
+            SomaAtual <- 1
+            SomaAnterior <- 0
 
-      se escolher = 5 entao
-         limpatela
-         escreval("*Sequencia de Quadrados Perfeitos*")
-         escreval("-----------------------")
-         escreval("Insira um numero")
-         leia(N)
-         escreval("Numero escolhido:", N)
-         escreval("")
-         escreval("Insira qualquer numero para voltar ao menu")
-
-         leia(qualquer)
-      fimse
-
-      se escolher = 6 entao
-         limpatela
-         escreval("*Sequencia de Cubos*")
-         escreval("-----------------------")
-         escreval("Digite ate qual numero deseja ver os cubos: ")
-         leia(N)
-         para i de 1 ate N faca
-            cubo <- i * i * i
-            escreval(i, "^3 = ", cubo)
-         fimpara
-         escreval("")
-         escreval("Insira qualquer numero para voltar ao menu")
-
-         leia(qualquer)
-      fimse
-
-      se escolher = 7 entao
-         limpatela
-         escreval("*Sequencia Geometrica*")
-         escreval("-----------------------")
-         escreval("Insira um numero")
-         leia(N)
-         escreval("Numero escolhido:", N)
-         escreval("")
-         escreval("Insira qualquer numero para voltar ao menu")
-
-         leia(qualquer)
-      fimse
-
-      se escolher = 8 entao
-         limpatela
-         escreval("*Sequencia Alternada*")
-         escreval("-----------------------")
-         escreval("Escolha o tipo de sequencia:")
-         escreval("1 - Alternando sinal (1, -2, 3, -4...)")
-         escreval("2 - Somando e subtraindo alternadamente")
-         leia(escolher)
-
-         escreval("Insira um numero maximo de posicoes para mostrar a sequencia:")
-         leia(limiteSequencia)
-
-         indiceSequencia <- 1
-         sinalAlternado <- 1
-         valorSequenciaAtual <- 0
-
-         se escolher = 1 entao
-            enquanto indiceSequencia <= limiteSequencia faca
-               valorSequenciaAtual <- indiceSequencia * sinalAlternado
-               escreval(valorSequenciaAtual)
-               sinalAlternado <- sinalAlternado * -1
-               indiceSequencia <- indiceSequencia + 1
+            enquanto Natual <= N faca
+               SomaAtual <- Natual + SomaAnterior
+               escreval(Natual, "-", SomaAtual)
+               SomaAnterior <- SomaAtual
+               Natual <- Natual + 1
             fimenquanto
-         fimse
 
-         se escolher = 2 entao
-            escreval("Qual valor deseja SOMAR?")
+            escreval("")
+            escreval("Insira qualquer numero para voltar ao menu")
+            leia(qualquer)
+
+         caso 3
+
+            limpatela
+            escreval("*Sequencia de Numeros Primos*")
+            escreval("-----------------------")
+
+            escreva("Digite o numero que gostaria de saber a sequencia de primos: ")
+            leia(numero)
+
+            para primo de 2 ate numero faca
+
+               ediv <- 0
+
+               para divisor de 1 ate primo faca
+                  se (primo % divisor = 0) entao
+                     ediv <- ediv + 1
+                  fimse
+               fimpara
+
+               se (ediv = 2) entao
+                  escreva(primo, " ")
+               fimse
+
+            fimpara
+
+            escreval()
+            escreval("Insira qualquer numero para voltar ao menu")
+            leia(qualquer)
+
+         caso 4
+
+            limpatela
+            escreval("*Sequencia Fatorial*")
+            escreval("-----------------------")
+
+            escreval("Insira a posicao do fatorial: ")
             leia(a)
 
-            escreval("Qual valor deseja SUBTRAIR?")
-            leia(b)
+            para x de 1 ate a faca
 
-            enquanto indiceSequencia <= limiteSequencia faca
-               se sinalAlternado = 1 entao
-                  valorSequenciaAtual <- valorSequenciaAtual + a
-               senao
-                  valorSequenciaAtual <- valorSequenciaAtual - b
-               fimse
+               d <- 1
 
-               escreval(valorSequenciaAtual)
+               para y de 1 ate x faca
+                  d <- d * y
+               fimpara
 
-               sinalAlternado <- sinalAlternado * -1
-               indiceSequencia <- indiceSequencia + 1
-            fimenquanto
-         fimse
+               escreval("O fatorial de ", x, " e ", d)
 
-         escreval("")
-         escreval("Insira qualquer numero para voltar ao menu")
-         leia(qualquer)
-      fimse
+            fimpara
 
-      se escolher = 9 entao
-         limpatela
-         escreval("*Sequencia Tribonacci*")
-         escreval("-----------------------")
-         escreval("Insira um numero")
-         leia(N)
-         escreval("Numero escolhido:", N)
-         escreval("")
-         escreval("Insira qualquer numero para voltar ao menu")
+            escreval()
+            escreval("Insira qualquer numero para voltar ao menu:")
+            leia(qualquer)
 
-         leia(qualquer)
-      fimse
+         caso 5
 
-      se (escolher > 9) ou (escolher < 0) entao
-         limpatela
-         escreval("Opcao nao valida")
-         escreval("Insira qualquer numero para voltar ao menu")
+            limpatela
+            escreval("*Sequencia de Quadrados Perfeitos*")
+            escreval("-----------------------")
 
-         leia(qualquer)
-      fimse
+            escreva("Digite ate qual numero gostaria de ver a sequencia: ")
+            leia(N)
+
+            para C de 1 ate N faca
+               S <- C * C
+               escreva(S, " ")
+            fimpara
+
+            escreval("")
+            escreval("Insira qualquer numero para voltar ao menu")
+            leia(qualquer)
+
+         caso 6
+
+            limpatela
+            escreval("*Sequencia de Cubos*")
+            escreval("-----------------------")
+
+            escreval("Digite ate qual numero deseja ver os cubos: ")
+            leia(N)
+
+            para i de 1 ate N faca
+               cubo <- i * i * i
+               escreval(i, "^3 = ", cubo)
+            fimpara
+
+            escreval("")
+            escreval("Insira qualquer numero para voltar ao menu")
+            leia(qualquer)
+
+         caso 7
+
+            limpatela
+            escreval("*Sequencia Geometrica*")
+            escreval("-----------------------")
+
+            escreval("Insira um numero")
+            leia(N)
+
+            escreval("Numero escolhido:", N)
+
+            escreval("")
+            escreval("Insira qualquer numero para voltar ao menu")
+            leia(qualquer)
+
+         caso 8
+
+            limpatela
+            escreval("*Sequencia Alternada*")
+            escreval("-----------------------")
+
+            escreval("Escolha o tipo de sequencia:")
+            escreval("1 - Alternando sinal (1, -2, 3, -4...)")
+            escreval("2 - Somando e subtraindo alternadamente")
+
+            leia(escolher)
+
+            escreval("Insira um numero maximo de posicoes para mostrar a sequencia:")
+            leia(limiteSequencia)
+
+            indiceSequencia <- 1
+            sinalAlternado <- 1
+            valorSequenciaAtual <- 0
+
+            se escolher = 1 entao
+
+               enquanto indiceSequencia <= limiteSequencia faca
+
+                  valorSequenciaAtual <- indiceSequencia * sinalAlternado
+                  escreval(valorSequenciaAtual)
+
+                  sinalAlternado <- sinalAlternado * -1
+                  indiceSequencia <- indiceSequencia + 1
+
+               fimenquanto
+
+            fimse
+
+            se escolher = 2 entao
+
+               escreval("Qual valor deseja SOMAR?")
+               leia(a)
+
+               escreval("Qual valor deseja SUBTRAIR?")
+               leia(b)
+
+               enquanto indiceSequencia <= limiteSequencia faca
+
+                  se sinalAlternado = 1 entao
+                     valorSequenciaAtual <- valorSequenciaAtual + a
+                  senao
+                     valorSequenciaAtual <- valorSequenciaAtual - b
+                  fimse
+
+                  escreval(valorSequenciaAtual)
+
+                  sinalAlternado <- sinalAlternado * -1
+                  indiceSequencia <- indiceSequencia + 1
+
+               fimenquanto
+
+            fimse
+
+            escreval("")
+            escreval("Insira qualquer numero para voltar ao menu")
+            leia(qualquer)
+
+         caso 9
+
+            limpatela
+            escreval("*Sequencia Tribonacci*")
+            escreval("-----------------------")
+
+            escreval("Insira um numero")
+            leia(N)
+
+            escreval("Numero escolhido:", N)
+
+            escreval("")
+            escreval("Insira qualquer numero para voltar ao menu")
+            leia(qualquer)
+
+         caso 0
+
+            escreval("Encerrando programa...")
+
+         outrocaso
+
+            limpatela
+            escreval("Opcao nao valida")
+            escreval("Insira qualquer numero para voltar ao menu")
+            leia(qualquer)
+
+      fimescolha
 
    fimenquanto
 
