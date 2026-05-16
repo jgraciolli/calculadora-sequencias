@@ -19,7 +19,7 @@ Algoritmo "Desenvolvimento de Aplicacao de Calculo de Sequencias Logicas"
 //   Miguel Vitale - Developer
 //   Olavo Salles - Developer
 //
-// Data atual  : 11/04/2026
+// Data atual  : 16/04/2026
 
 Var
 
@@ -45,9 +45,13 @@ Var
    // variaveis sequencia alternada
    sinalAlternado, limiteSequencia, valorSequenciaAtual : real
    indiceSequencia : inteiro
-   
+
    // Variaveis Sequencia de Quadrados Perfeitos
    S: inteiro
+
+   // Variaveis: sequência geométrica
+   razaoG, resultadoG: real
+   AtualP, posicaoG: inteiro
 
 Inicio
 
@@ -177,11 +181,11 @@ Inicio
          escreval("-----------------------")
          escreva("Digite ate qual numero gostaria de ver a sequencia: ")
          leia(N)
-            para c <- 1 ate n faca
-               S <- c * c
-               c <- c + 1
-               escreva (S)
-            fimpara
+         para c <- 1 ate n faca
+            S <- c * c
+            c <- c + 1
+            escreva (S)
+         fimpara
          escreval("")
          escreval("Insira qualquer numero para voltar ao menu")
 
@@ -208,9 +212,18 @@ Inicio
          limpatela
          escreval("*Sequencia Geometrica*")
          escreval("-----------------------")
-         escreval("Insira um numero")
-         leia(N)
-         escreval("Numero escolhido:", N)
+         escreval("Insira a razão da sequencia geometrica")
+         leia(razaoG)
+         escreval("Insira até que posição da sequência deseja ver")
+         leia(posicaoG)
+
+         resultadoG <- 1
+
+         para AtualP de 1 ate posicaoG faca
+            Escreval(AtualP, "-", resultadoG)
+            resultadoG <- resultadoG * razaoG
+         fimpara
+
          escreval("")
          escreval("Insira qualquer numero para voltar ao menu")
 
