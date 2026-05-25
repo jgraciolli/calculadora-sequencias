@@ -48,6 +48,11 @@ Var
    
    // Variaveis Sequencia de Quadrados Perfeitos
    S: inteiro
+   
+   // variaveis Sequencia tribonacci
+   v1,v2,v3,v4,limite,cont:inteiro
+
+
 
 Inicio
 
@@ -272,9 +277,22 @@ Inicio
          limpatela
          escreval("*Sequencia Tribonacci*")
          escreval("-----------------------")
-         escreval("Insira um numero")
-         leia(N)
-         escreval("Numero escolhido:", N)
+         escreva("Digite um limite: ")
+         leia(limite)
+         v1<-0
+         v2<-1
+         v3<-1
+         cont<-0
+
+         enquanto (cont<limite) faca
+            escreva(v1)
+            v4<-v1+v2+v3
+            v1<-v2
+            v2<-v3
+            v3<-v4
+            cont<-cont+1
+         fimenquanto
+         
          escreval("")
          escreval("Insira qualquer numero para voltar ao menu")
 
