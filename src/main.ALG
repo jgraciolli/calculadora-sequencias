@@ -1,8 +1,3 @@
-// ======================================================
-// PB-13 - Interface Colorida
-// Grupo: Deploy de Sexta
-// ======================================================
-
 Algoritmo "Desenvolvimento de Aplicacao de Calculo de Sequencias Logicas"
 // API - 1? Semestre
 //
