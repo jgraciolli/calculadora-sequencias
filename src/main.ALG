@@ -60,7 +60,7 @@ Var
 
 Inicio
 
-   escolher <-11
+   escolher <- 11
 
    enquanto escolher <> 10 faca
       limpatela
@@ -120,17 +120,18 @@ Inicio
             escreval("Quantos termos da sequencia de Fibonacci deseja saber?")
             leia(indiceLimite)
 
-            escreva(termo1, termo2)
+            escreval(" 1 =", termo1)
+            escreval(" 2 =", termo2)
 
             Para contador <- 3 ate (indiceLimite) faca
                proximoTermo <- termo1 + termo2
-               escreva (proximoTermo)
+               escreval(contador, " =", proximoTermo)
                termo1 <- termo2
                termo2 <- proximoTermo
             fimpara
 
             escreval("")
-            escreval("Pressione ENTER para voltar ao menu:")
+            escreval("Pressione ENTER para voltar ao menu")
 
             leia(qualquer)
 
@@ -255,7 +256,7 @@ Inicio
             fimpara
 
             escreval()
-            escreval("Pressione ENTER para voltar ao menu:")
+            escreval("Pressione ENTER para voltar ao menu")
 
             leia(qualquer)
          
@@ -473,7 +474,7 @@ Inicio
             escreval("======================================================")
 
             escreval("Opcao invalida!")
-            escreval("Pressione ENTER para voltar ao menu:")
+            escreval("Pressione ENTER para voltar ao menu")
 
             leia(qualquer)
             escolher <- 11
