@@ -27,13 +27,13 @@ Algoritmo "Desenvolvimento de Aplicacao de Calculo de Sequencias Logicas"
 Var
 
    // Variaveis controle
-   escolher, N, qualquer, contador: inteiro
+   escolher, qualquer, contador, indiceLimite: inteiro
 
    // Variaveis do num informado, do num primo, num divisivel e do divisor
    numero, primo, ediv, divisor: inteiro
 
    // Variaveis sequencia fibonacci
-   qtdTermos, termo1, termo2, proximoTermo: inteiro
+   termo1, termo2, proximoTermo: inteiro
 
    // Variaveis sequencia fatorial
    a,b,x,y : inteiro
@@ -42,8 +42,8 @@ Var
    // Variaveis sequencia de Cubos
    cubo, i : inteiro
 
-   // variaveis sequencia triangular
-   Natual, SomaAtual, SomaAnterior: real
+   // variaveis sequencia triangulares
+   numAtual, somaAtual, somaAnterior: real
 
    // variaveis sequencia alternada
    escolherTipo, indiceSequencia: inteiro
@@ -119,11 +119,11 @@ Inicio
             termo2 <- 1
 
             escreval("Quantos termos da sequencia de Fibonacci deseja saber?")
-            leia(qtdTermos)
+            leia(indiceLimite)
 
             escreva(termo1, termo2)
 
-            Para contador <- 3 ate (qtdTermos) faca
+            Para contador <- 3 ate (indiceLimite) faca
                proximoTermo <- termo1 + termo2
                escreva (proximoTermo)
                termo1 <- termo2
@@ -149,26 +149,25 @@ Inicio
             escreval("                NUMEROS TRIANGULARES")
             escreval("======================================================")
 
-            escreval("Insira ate qual posicao da sequencia deseja ver")
-            leia(N)
+            escreval("Insira ate qual posicao da sequencia deseja saber:")
+            leia(indiceLimite)
 
             // posicao da sequencia
-            Natual <- 1
+            numAtual <- 1
 
             // o numero que vai ser somado
-            SomaAtual <- 1
+            somaAtual <- 1
 
             // a soma de todos os numeros anteriores
-            SomaAnterior <- 0
+            somaAnterior <- 0
 
-            enquanto Natual <= N faca
-               SomaAtual <- Natual + SomaAnterior
-               escreval(Natual, "-", SomaAtual)
-               SomaAnterior <- SomaAtual
-               Natual <- Natual + 1
+            enquanto numAtual <= indiceLimite faca
+               somaAtual <- numAtual + somaAnterior
+               escreval(numAtual, "-", somaAtual)
+               somaAnterior <- somaAtual
+               numAtual <- numAtual + 1
             fimenquanto
 
-            // voltar ao menu
             escreval("")
             escreval("Pressione ENTER para voltar ao menu")
 
@@ -258,9 +257,9 @@ Inicio
             escreval("======================================================")
 
             escreva("Digite ate qual numero gostaria de ver a sequencia: ")
-            leia(N)
+            leia(indiceLimite)
 
-            para c <- 1 ate n faca
+            para c <- 1 ate indiceLimite faca
                S <- c * c
                c <- c + 1
                escreva (S)
