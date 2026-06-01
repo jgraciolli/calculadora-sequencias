@@ -52,8 +52,8 @@ Var
    razao, resultado: real
 
    // variaveis sequencia alternada
-   escolherTipo, indiceSequencia: inteiro
-   sinalAlternado, limiteSequencia, valorSequenciaAtual : real
+   escolherTipo, sinalAlternado: inteiro
+   valorSoma, valorSubtracao, valorSequenciaAtual: real
    
    // variaveis Sequencia tribonacci
    v1,v2,v3,v4,limite,cont:inteiro
@@ -359,49 +359,53 @@ Inicio
             escreval("              SEQUENCIA ALTERNADA")
             escreval("======================================================")
 
+            escreval("Insira um numero maximo de posicoes para mostrar a sequencia:")
+            leia(indiceLimite)
+
+            escreval("")
             escreval("Escolha o tipo de sequencia:")
             escreval("1 - Alternando sinal (1, -2, 3, -4...)")
             escreval("2 - Somando e subtraindo alternadamente")
 
             leia(escolherTipo)
 
-            escreval("Insira um numero maximo de posicoes para mostrar a sequencia:")
-            leia(limiteSequencia)
-
-            indiceSequencia <- 1
+            contador <- 1
             sinalAlternado <- 1
             valorSequenciaAtual <- 0
 
-            se escolherTipo = 1 entao
-               enquanto indiceSequencia <= limiteSequencia faca
-                  valorSequenciaAtual <- indiceSequencia * sinalAlternado
-                  escreval(valorSequenciaAtual)
-                  sinalAlternado <- sinalAlternado * -1
-                  indiceSequencia <- indiceSequencia + 1
-               fimenquanto
-            fimse
+            escolha escolherTipo
+               caso 1
+                  para contador de 1 ate indiceLimite faca
+                     valorSequenciaAtual <- contador * sinalAlternado
+                     escreval(contador, " =", valorSequenciaAtual)
+                     sinalAlternado <- sinalAlternado * -1
+                  fimpara
+               
+               caso 2
+                  escreval("Qual valor deseja SOMAR?")
+                  leia(valorSoma)
 
-            se escolherTipo = 2 entao
-               escreval("Qual valor deseja SOMAR?")
-               leia(a)
+                  escreval("Qual valor deseja SUBTRAIR?")
+                  leia(valorSubtracao)
 
-               escreval("Qual valor deseja SUBTRAIR?")
-               leia(b)
+                  para contador de 1 ate indiceLimite faca
+                     se sinalAlternado = 1 entao
+                        valorSequenciaAtual <- valorSequenciaAtual + valorSoma
+                     senao
+                        valorSequenciaAtual <- valorSequenciaAtual - valorSubtracao
+                     fimse
 
-               enquanto indiceSequencia <= limiteSequencia faca
-                  se sinalAlternado = 1 entao
-                     valorSequenciaAtual <- valorSequenciaAtual + a
-                  senao
-                     valorSequenciaAtual <- valorSequenciaAtual - b
-                  fimse
+                     escreval(valorSequenciaAtual)
 
-                  escreval(valorSequenciaAtual)
-
-                  sinalAlternado <- sinalAlternado * -1
-                  indiceSequencia <- indiceSequencia + 1
-               fimenquanto
-            fimse
-
+                     sinalAlternado <- sinalAlternado * -1
+                  fimpara
+               
+               outrocaso
+                  MudaCor("Vermelho","Frente")
+                  MudaCor("Branco","Fundos")
+                  escreval("Opcao invalida!")
+            fimescolha
+            
             escreval("")
             escreval("Pressione ENTER para voltar ao menu")
 
