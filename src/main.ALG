@@ -39,8 +39,8 @@ Var
    qtdNumPrimos, divisor, qtdDivisores: inteiro
 
    // Variaveis sequencia fatorial
-   a,b,x,y, multiplicador : inteiro
-   d, resultadoFatorial: real
+   multiplicador : inteiro
+   resultadoFatorial: real
 
    // Variaveis sequencia de Cubos
    cubo, i : inteiro
@@ -252,7 +252,7 @@ Inicio
                   resultadoFatorial <- resultadoFatorial * multiplicador
                fimpara
                
-               escreval("Fatorial de ", contador, " =", resultadoFatorial)
+               escreval(contador, "! =", resultadoFatorial)
             fimpara
 
             escreval()
