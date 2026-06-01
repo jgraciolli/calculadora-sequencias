@@ -26,14 +26,14 @@ Algoritmo "Desenvolvimento de Aplicacao de Calculo de Sequencias Logicas"
 
 Var
 
-   // Variaveis controle de menu
-   escolher, N, qualquer: inteiro
+   // Variaveis controle
+   escolher, N, qualquer, contador: inteiro
 
    // Variaveis do num informado, do num primo, num divisivel e do divisor
    numero, primo, ediv, divisor: inteiro
 
    // Variaveis sequencia fibonacci
-   C, T1, T2, PTF, termos: inteiro
+   qtdTermos, termo1, termo2, proximoTermo: inteiro
 
    // Variaveis sequencia fatorial
    a,b,x,y : inteiro
@@ -115,24 +115,22 @@ Inicio
             escreval("                 SEQUENCIA DE FIBONACCI")
             escreval("======================================================")
 
-            T1 <- 0
-            T2 <- 1
+            termo1 <- 0
+            termo2 <- 1
 
-            escreva ("Quantos termos da sequencia de Fibonacci deseja saber?: ")
-            leia (termos)
+            escreval("Quantos termos da sequencia de Fibonacci deseja saber?")
+            leia(qtdTermos)
 
-            escreva (T1)
-            escreva (T2)
+            escreva(termo1, termo2)
 
-            Para C <- 3 ate (termos) faca
-               PTF <- T1 + T2
-               escreva (PTF)
-               T1 <- T2
-               T2 <- PTF
+            Para contador <- 3 ate (qtdTermos) faca
+               proximoTermo <- termo1 + termo2
+               escreva (proximoTermo)
+               termo1 <- termo2
+               termo2 <- proximoTermo
             fimpara
 
-            escreval()
-            escreval(" ")
+            escreval("")
             escreval("Pressione ENTER para voltar ao menu:")
 
             leia(qualquer)
