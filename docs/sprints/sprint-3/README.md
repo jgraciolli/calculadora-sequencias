@@ -5,10 +5,10 @@
 
 | Rank | Prioridade | User Story | Sprint | Requisito do Cliente | Status |
 | :--: | :--------: | ---------- | :----: | :------------------: | :----: |
-| 10 | Baixa | Como usuário quero visualizar a sequência de Tribonacci, para conhecer variações da sequência de Fibonacci | 3 | RF-13 | 🔲 |
-| 11 | Baixa | Como usuário quero visualizar uma sequência geométrica, para entender progressões multiplicativas | 3 | RF-12 | 🔲 |
-| 12 | Baixa | Como usuário quero informar um índice N para calcular a sequência de quadrados perfeitos até o valor correspondente | 3 | RF-07 | 🔲 |
-| 13 | Baixa | Como usuário quero que o sistema possua uma interface colorida e amigável, com cores convenientes para diferentes telas | 3 | RNF-04 | 🔲 |
+| 10 | Baixa | Como usuário quero visualizar a sequência de Tribonacci, para conhecer variações da sequência de Fibonacci | 3 | RF-13 | ✅ |
+| 11 | Baixa | Como usuário quero visualizar uma sequência geométrica, para entender progressões multiplicativas | 3 | RF-12 | ✅ |
+| 12 | Baixa | Como usuário quero informar um índice N para calcular a sequência de quadrados perfeitos até o valor correspondente | 3 | RF-07 | ✅ |
+| 13 | Baixa | Como usuário quero que o sistema possua uma interface colorida e amigável, com cores convenientes para diferentes telas | 3 | RNF-04 | ✅ |
 
 ---
 
