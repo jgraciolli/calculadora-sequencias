@@ -51,6 +51,10 @@ Var
 
    // Variaveis Sequencia de Quadrados Perfeitos
    S: inteiro
+   
+   // Variaveis: sequência geométrica
+   razaoG, resultadoG: real
+   AtualP, posicaoG: inteiro
 
 Inicio
 
@@ -288,10 +292,17 @@ Inicio
          escreval("              SEQUENCIA GEOMETRICA")
          escreval("======================================================")
 
-         escreval("Insira um numero")
-         leia(N)
+         escreval("Insira a razão da sequencia geometrica")
+         leia(razaoG)
+         escreval("Insira até que posição da sequência deseja ver")
+         leia(posicaoG)
 
-         escreval("Numero escolhido:", N)
+         resultadoG <- 1
+
+         para AtualP de 1 ate posicaoG faca
+            Escreval(AtualP, "-", resultadoG)
+            resultadoG <- resultadoG * razaoG
+         fimpara
 
          escreval("")
          escreval("Insira qualquer numero para voltar ao menu")
