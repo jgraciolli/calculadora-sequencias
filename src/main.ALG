@@ -42,11 +42,11 @@ Var
    multiplicador : inteiro
    resultadoFatorial: real
 
-   // Variaveis Sequencia de Quadrados Perfeitos
+   // Variavel Sequencia de Quadrados Perfeitos
    quadrado: inteiro
 
-   // Variaveis sequencia de Cubos
-   cubo, i : inteiro
+   // Variavel sequencia de Cubos
+   cubo: inteiro
 
    // variaveis sequencia alternada
    escolherTipo, indiceSequencia: inteiro
@@ -301,12 +301,12 @@ Inicio
             escreval("                SEQUENCIA DE CUBOS")
             escreval("======================================================")
 
-            escreval("Digite ate qual numero deseja ver os cubos: ")
-            leia(N)
+            escreval("Digite ate qual numero deseja ver os cubos:")
+            leia(indiceLimite)
 
-            para i de 1 ate N faca
-               cubo <- i * i * i
-               escreval(i, "^3 = ", cubo)
+            para contador de 1 ate indiceLimite faca
+               cubo <- contador * contador * contador
+               escreval(contador, "^3 =", cubo)
             fimpara
 
             escreval("")
