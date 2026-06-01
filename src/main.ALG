@@ -29,21 +29,21 @@ Var
    // Variaveis controle
    escolher, qualquer, contador, indiceLimite: inteiro
 
-   // Variaveis do num informado, do num primo, num divisivel e do divisor
-   qtdNumPrimos, divisor, qtdDivisores: inteiro
-
    // Variaveis sequencia fibonacci
    termo1, termo2, proximoTermo: inteiro
 
+   // Variaveis sequencia triangulares
+   numAtual, somaAtual, somaAnterior: real
+
+   // Variaveis sequencia de numeros primos
+   qtdNumPrimos, divisor, qtdDivisores: inteiro
+
    // Variaveis sequencia fatorial
-   a,b,x,y : inteiro
-   d: real
+   a,b,x,y, multiplicador : inteiro
+   d, resultadoFatorial: real
 
    // Variaveis sequencia de Cubos
    cubo, i : inteiro
-
-   // variaveis sequencia triangulares
-   numAtual, somaAtual, somaAnterior: real
 
    // variaveis sequencia alternada
    escolherTipo, indiceSequencia: inteiro
@@ -242,15 +242,17 @@ Inicio
             escreval("                 SEQUENCIA FATORIAL")
             escreval("======================================================")
 
-            escreval("Insira a posicao do fatorial: ")
-            leia(a)
+            escreval("Insira um numero limite de fatoriais para visualizar:")
+            leia(indiceLimite)
 
-            para x de 1 ate a faca
-               d <- 1
-               para y de 1 ate x faca
-                  d <- d * y
+            para contador de 1 ate indiceLimite faca
+               resultadoFatorial <- 1
+               
+               para multiplicador de 1 ate contador faca
+                  resultadoFatorial <- resultadoFatorial * multiplicador
                fimpara
-               escreval("O fatorial de ", x, " e ", d)
+               
+               escreval("Fatorial de ", contador, " =", resultadoFatorial)
             fimpara
 
             escreval()
