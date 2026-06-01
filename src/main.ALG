@@ -42,15 +42,15 @@ Var
    multiplicador : inteiro
    resultadoFatorial: real
 
+   // Variaveis Sequencia de Quadrados Perfeitos
+   quadrado: inteiro
+
    // Variaveis sequencia de Cubos
    cubo, i : inteiro
 
    // variaveis sequencia alternada
    escolherTipo, indiceSequencia: inteiro
    sinalAlternado, limiteSequencia, valorSequenciaAtual : real
-
-   // Variaveis Sequencia de Quadrados Perfeitos
-   S: inteiro
    
    // Variaveis: sequência geométrica
    razaoG, resultadoG: real
@@ -274,13 +274,12 @@ Inicio
             escreval("          SEQUENCIA DE QUADRADOS PERFEITOS")
             escreval("======================================================")
 
-            escreva("Digite ate qual numero gostaria de ver a sequencia: ")
+            escreval("Digite quantos quadrados perfeitos gostaria de visualizar:")
             leia(indiceLimite)
 
-            para c <- 1 ate indiceLimite faca
-               S <- c * c
-               c <- c + 1
-               escreva (S)
+            para contador de 1 ate indiceLimite faca
+               quadrado <- contador * contador
+               escreval(contador, "^2 =", quadrado)
             fimpara
 
             escreval("")
