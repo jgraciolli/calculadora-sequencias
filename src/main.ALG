@@ -56,7 +56,7 @@ Var
    valorSoma, valorSubtracao, valorSequenciaAtual: real
    
    // variaveis Sequencia tribonacci
-   v1,v2,v3,v4,limite,cont:inteiro
+   v1, v2, v3, v4: inteiro
 
 Inicio
 
@@ -425,20 +425,21 @@ Inicio
             escreval("              SEQUENCIA TRIBONACCI")
             escreval("======================================================")
 
-            escreva("Digite um limite: ")
-            leia(limite)
-            v1<-0
-            v2<-1
-            v3<-1
-            cont<-0
+            escreval("Ate qual indice deseja visualizar a sequencia?")
+            leia(indiceLimite)
+            
+            v1 <- 0
+            v2 <- 1
+            v3 <- 1
+            contador <- 1
 
-            enquanto (cont<limite) faca
-               escreva(v1)
-               v4<-v1+v2+v3
-               v1<-v2
-               v2<-v3
-               v3<-v4
-               cont<-cont+1
+            enquanto (contador <= indiceLimite) faca
+               escreval(contador, " =", v1)
+               v4 <- v1 + v2 + v3
+               v1 <- v2
+               v2 <- v3
+               v3 <- v4
+               contador <- contador + 1
             fimenquanto
 
             escreval("")
