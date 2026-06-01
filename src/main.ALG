@@ -30,7 +30,7 @@ Var
    escolher, qualquer, contador, indiceLimite: inteiro
 
    // Variaveis do num informado, do num primo, num divisivel e do divisor
-   numero, primo, ediv, divisor: inteiro
+   qtdNumPrimos, divisor, qtdDivisores: inteiro
 
    // Variaveis sequencia fibonacci
    termo1, termo2, proximoTermo: inteiro
@@ -187,25 +187,41 @@ Inicio
             escreval("             SEQUENCIA DE NUMEROS PRIMOS")
             escreval("======================================================")
 
-            escreva("Digite o numero que gostaria de saber a sequencia de primos: ")
-            leia(numero)
+            escreval("Quantos numeros primos deseja visualizar?")
+            leia(indiceLimite)
+            
+            qtdNumPrimos <- 0
 
-            // verifica quantos numeros primos possui ate o numero informado e exibe cada um
-            para primo de 2 ate numero faca
-               ediv <- 0
+            // o primeiro numero primo e o 2
+            // apos o 2, nao existe numero primo PAR, entao eliminamos a
+            // posibilidade de percorrer numeros PARES nos lacos de iteracao
+            // que checam se o proximo numero e primo
+            se indiceLimite >= 1 entao
+               escreval(" 1 - 2")
+               qtdNumPrimos <- 1
+            fimse
 
-               // verifica quantos divisores esse numero possui
-               para divisor de 1 ate primo faca
-                  se (primo % divisor = 0) entao
-                     ediv <- ediv+1
+            // comecamos a checar os PRIMOS a partir do 3
+            // contador recebe 1 pois ao entrar no laco abaixo
+            // acumula +2 -> igualando-se ao numero 3
+            contador <- 1
+            
+            enquanto qtdNumPrimos < indiceLimite faca
+               contador <- contador + 2
+               qtdDivisores <- 0
+               
+               para divisor de 1 ate contador passo 2 faca
+                  se (contador % divisor) = 0 entao
+                     qtdDivisores  <- qtdDivisores + 1
                   fimse
                fimpara
 
-               // Verifica se e um numero primo e exibe caso seja
-               se (ediv = 2) entao
-                  escreva(primo)
+               
+               se (qtdDivisores = 2) entao
+                  qtdNumPrimos <- qtdNumPrimos + 1
+                  escreval(qtdNumPrimos, " -", contador)
                fimse
-            fimpara
+            fimenquanto
 
             escreval()
             escreval("Pressione ENTER para voltar ao menu")
