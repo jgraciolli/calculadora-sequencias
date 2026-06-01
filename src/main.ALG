@@ -48,13 +48,12 @@ Var
    // Variavel sequencia de Cubos
    cubo: inteiro
 
+   // Variaveis sequência geométrica
+   razao, resultado: real
+
    // variaveis sequencia alternada
    escolherTipo, indiceSequencia: inteiro
    sinalAlternado, limiteSequencia, valorSequenciaAtual : real
-   
-   // Variaveis: sequência geométrica
-   razaoG, resultadoG: real
-   AtualP, posicaoG: inteiro
    
    // variaveis Sequencia tribonacci
    v1,v2,v3,v4,limite,cont:inteiro
@@ -328,16 +327,17 @@ Inicio
             escreval("              SEQUENCIA GEOMETRICA")
             escreval("======================================================")
 
-            escreval("Insira a razão da sequencia geometrica")
-            leia(razaoG)
-            escreval("Insira até que posição da sequência deseja ver")
-            leia(posicaoG)
+            escreval("Insira a razão da sequencia geometrica:")
+            leia(razao)
+            
+            escreval("Insira até que posição da sequência deseja ver a sequencia:")
+            leia(indiceLimite)
 
-            resultadoG <- 1
+            resultado <- 1
 
-            para AtualP de 1 ate posicaoG faca
-               Escreval(AtualP, "-", resultadoG)
-               resultadoG <- resultadoG * razaoG
+            para contador de 1 ate indiceLimite faca
+               escreval(contador, " =", resultado)
+               resultado <- resultado * razao
             fimpara
 
             escreval("")
